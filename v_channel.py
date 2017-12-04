@@ -47,10 +47,10 @@ def find_centroids(image_path):
         # cv2.rectangle(im, (x, y), (x+w, y+h), (0, 255, 255), 2)
         # cv2.drawContours(im, contours, i, (0, 0, 255), 2)
 
-    # cv2.imshow('circles', im)
-    # cv2.waitKey(0)
+    cv2.imshow('circles', im)
+    cv2.waitKey(0)
 
-    return xs, ys, areas
+    # return xs, ys, areas
 
 
 def find_centroid_for_all():
@@ -94,5 +94,5 @@ def show_centroid_for_one(filename):
     print(colors)
 
 
-# show_centroid_for_one('t=01_z=007.jpg')
-find_centroid_for_all()
+show_centroid_for_one('t=01_z=002.jpg')
+# find_centroid_for_all()
